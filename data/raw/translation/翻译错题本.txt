@@ -1,0 +1,35 @@
+## 促进经济（高频搭配）
+【中文原文】这些措施将有力促进经济发展。
+【我的译文】These measures will strongly promote economic development.
+【参考译文】These measures will give a strong boost to economic growth.
+【错因】promote economic development 语法没错，但“有力促进”用 strongly promote 偏中式；“促进经济”更地道的搭配是 boost economic growth / give a boost to the economy。
+---
+## 减少污染（冠词）
+【中文原文】政府正在采取有效措施减少空气污染。
+【我的译文】The government is taking effective measures to reduce the air pollution.
+【参考译文】The government is taking effective measures to reduce air pollution.
+【错因】air pollution 在这里是泛指，不需要加定冠词 the；表示“减少污染”还可以用 curb pollution，比 reduce 更正式。
+---
+## 传承文化（动词辨析）
+【中文原文】我们应该把中国传统文化传承给下一代。
+【我的译文】We should inherit Chinese traditional culture to the next generation.
+【参考译文】We should pass on traditional Chinese culture to the next generation.
+【错因】inherit 表示“从上一代继承、接受”，方向反了；表示“把文化传给下一代”要用 pass on ... to ...。另外 traditional Chinese culture 比 Chinese traditional culture 更常见。
+---
+## 科技创新（词性与搭配）
+【中文原文】科技创新是推动经济增长的重要力量。
+【我的译文】Technology innovation is an important power to push economic growth.
+【参考译文】Technological innovation is a major driver of economic growth.
+【错因】“科技创新”常用 technological innovation，不用 technology innovation；power to push 太生硬，“推动经济增长的重要力量”可译为 a major driver of economic growth。
+---
+## 生活水平（固定表达）
+【中文原文】近年来，中国人民的生活水平显著提高。
+【我的译文】In recent years, Chinese people's living level has improved obviously.
+【参考译文】In recent years, the living standards of the Chinese people have improved significantly.
+【错因】“生活水平”的固定表达是 living standards，不用 living level；表示“显著提高”用 improve significantly 比 obviously 更准确；the Chinese people 指中国人民整体。
+---
+## 环境保护（冠词与并列）
+【中文原文】我们必须在发展经济的同时保护环境。
+【我的译文】We must protect environment while developing economy.
+【参考译文】We must protect the environment while developing the economy.
+【错因】environment 和 economy 在这里都特指我们所在的环境和经济体系，通常要加 the；while developing 是状语从句的省略形式，主语与主句一致时可直接用 while + doing。

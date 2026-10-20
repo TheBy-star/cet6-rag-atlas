@@ -1,0 +1,41 @@
+# --- Secrets / 密钥 ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments / 虚拟环境 ---
+.venv/
+venv/
+env/
+
+# --- Generated data & models / 生成数据与模型 ---
+models/
+data/chunks/
+data/chroma_db/
+data/local_index/
+*.sqlite3
+
+# --- Logs & temporary files / 日志与临时文件 ---
+*.log
+pip-*/
+tmp*/
+.tmp_*
+tools/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Optional: uncomment if your raw notes are private ---
+# data/raw/

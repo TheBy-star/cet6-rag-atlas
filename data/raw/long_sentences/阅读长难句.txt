@@ -1,0 +1,104 @@
+## 长难句 01｜让步状语从句 + 定语从句
+【原句】While remote work offers flexibility, critics argue that it may weaken the sense of belonging that employees develop through face-to-face interaction.
+【主干】critics argue that...
+【结构】While 引导让步状语从句；that it may weaken... 是 argue 的宾语从句；that employees develop... 是定语从句，修饰 sense of belonging。
+【参考译文】尽管远程办公提供了灵活性，但批评者认为，它可能会削弱员工通过面对面交流建立起来的归属感。
+【考点】while 表让步/对比；sense of belonging 是固定搭配；develop a sense of belonging 表示“建立归属感”。
+---
+## 长难句 02｜Not until 部分倒装
+【原句】Not until governments invest in public transport will more people be willing to give up private cars.
+【主干】more people will be willing to give up private cars.
+【结构】Not until 位于句首，主句用部分倒装：will more people be willing...；until 引导时间状语从句。
+【参考译文】只有当政府投资公共交通，才会有更多人愿意放弃私家车。
+【考点】Not until 置于句首时，主句倒装；be willing to do sth 表示“愿意做某事”。
+---
+## 长难句 03｜介词 + which 定语从句
+【原句】The extent to which artificial intelligence will replace human workers remains a subject of intense debate.
+【主干】The extent remains a subject of intense debate.
+【结构】to which... 是“介词 + which”引导的定语从句，修饰 extent；to the extent 是固定搭配。
+【参考译文】人工智能将在多大程度上取代人类劳动者，仍然是一个激烈争论的话题。
+【考点】the extent to which 是六级写作高频结构；remain 作系动词，后接名词。
+---
+## 长难句 04｜主语从句 + not...but...
+【原句】What matters is not how much information we can access but how critically we can evaluate it.
+【主干】What matters is not A but B.
+【结构】What matters 是主语从句；is 后接 not...but... 并列结构；how much / how critically 分别是两个表语从句。
+【参考译文】重要的不是我们能获取多少信息，而是我们能多批判性地评估这些信息。
+【考点】What matters is... 是写作高频句型；not...but... 连接并列成分，注意结构对称。
+---
+## 长难句 05｜过去分词作状语 + 转折并列
+【原句】Compared with traditional classrooms, online learning offers greater flexibility but requires stronger self-discipline.
+【主干】online learning offers flexibility but requires self-discipline.
+【结构】Compared with... 是过去分词短语作状语；but 连接两个并列谓语。
+【参考译文】与传统课堂相比，在线学习提供了更大的灵活性，但也要求更强的自律。
+【考点】compared with/to 表示“与……相比”；self-discipline 是“自律”，写作常用。
+---
+## 长难句 06｜虚拟条件句的倒装
+【原句】Should universities fail to adapt to technological change, they may lose their relevance.
+【主干】they may lose their relevance.
+【结构】Should universities fail... 是省略 if 的虚拟条件句倒装，相当于 If universities should fail to...；fail to do 表示“未能做”。
+【参考译文】如果大学不能适应技术变革，它们可能会失去自身的相关性。
+【考点】Should + 主语 + 动词原形，是正式写作中的倒装条件句；adapt to 表示“适应”。
+---
+## 长难句 07｜强调句型 + not...but...
+【原句】It is not technology itself but the way people use it that determines its social impact.
+【主干】It is not A but B that determines its social impact.
+【结构】It is...that... 是强调句型，强调 not technology itself but the way people use it；the way 后省略了 in which。
+【参考译文】决定技术社会影响的不是技术本身，而是人们使用技术的方式。
+【考点】强调句型可强调主语、宾语或状语；the way (in which/that) sb does sth 是高频结构。
+---
+## 长难句 08｜the more...the more...
+【原句】The more time young people spend on short videos, the less patience they may develop for deep reading.
+【主干】The more..., the less...
+【结构】“the + 比较级，the + 比较级”表示“越……越……”；spend time on 是固定搭配；develop patience for 表示“培养对……的耐心”。
+【参考译文】年轻人在短视频上花的时间越多，他们可能越缺乏深度阅读的耐心。
+【考点】比较级句式注意语序；the more 后接名词时可用 the more time。
+---
+## 长难句 09｜Despite 介词短语 + who 定语从句
+【原句】Despite the rapid growth of online shopping, physical stores remain important for consumers who value experience and immediate service.
+【主干】physical stores remain important.
+【结构】Despite... 是介词短语作让步状语；who value... 是定语从句，修饰 consumers。
+【参考译文】尽管网购迅速发展，实体店对重视体验和即时服务的消费者仍然很重要。
+【考点】despite 后接名词或动名词，不接句子；value 作动词表示“重视”。
+---
+## 长难句 10｜that 宾语从句 + be related to
+【原句】A growing number of companies are recognizing that employee well-being is closely related to productivity.
+【主干】companies are recognizing that...
+【结构】A growing number of 修饰复数名词；that 引导宾语从句；be closely related to 表示“与……密切相关”。
+【参考译文】越来越多的公司认识到，员工的幸福感与生产力密切相关。
+【考点】a growing number of + 复数名词，谓语用复数；well-being 是不可数名词。
+---
+## 长难句 11｜Those who + be likely to
+【原句】Those who fail to keep learning are likely to fall behind in a rapidly changing job market.
+【主干】Those are likely to fall behind.
+【结构】who fail to keep learning 是定语从句，修饰 Those；be likely to do 表示“可能做”；fall behind 表示“落后”。
+【参考译文】那些不能持续学习的人，在快速变化的就业市场中很可能会落后。
+【考点】those who 是高频泛指结构；keep learning 表示“持续学习”。
+---
+## 长难句 12｜By the time + 完成时
+【原句】By the time students graduate, many of the skills they learned may already have become outdated.
+【主干】many of the skills may already have become outdated.
+【结构】By the time 引导时间状语从句，主句常用完成时；they learned 是省略关系代词的定语从句，修饰 skills。
+【参考译文】等到学生毕业时，他们学过的许多技能可能已经过时了。
+【考点】by the time + 一般现在时，主句常用将来完成时或情态动词 + have done。
+---
+## 长难句 13｜Rather than + 并列结构
+【原句】Rather than simply memorizing facts, students should learn how to question, analyze and apply knowledge.
+【主干】students should learn how to...
+【结构】Rather than... 表示“而不是”，后接动名词；how to question, analyze and apply 是“疑问词 + 不定式”结构，三个动词并列。
+【参考译文】学生不应只是死记事实，而应学会如何质疑、分析和运用知识。
+【考点】rather than 连接并列成分时注意形式一致；apply knowledge 表示“运用知识”。
+---
+## 长难句 14｜so...that... 结果状语从句
+【原句】The problem is so complex that no single country can solve it alone.
+【主干】The problem is so complex that...
+【结构】so + 形容词 + that 引导结果状语从句；no single country 表示“没有任何一个国家”。
+【参考译文】这个问题如此复杂，以至于没有任何一个国家能单独解决它。
+【考点】so...that... 与 such...that... 的区别；solve a problem 是固定搭配。
+---
+## 长难句 15｜were to 虚拟条件句
+【原句】If the government were to invest more in rural education, more children would have access to quality schooling.
+【主干】more children would have access to quality schooling.
+【结构】If...were to... 表示对未来的虚拟假设；主句用 would + 动词原形；have access to 表示“有机会获得”。
+【参考译文】如果政府加大对农村教育的投入，更多孩子就能获得优质教育。
+【考点】were to 是正式虚拟语气结构；have access to 后接名词，to 是介词。
