@@ -304,9 +304,9 @@ Type `exit` to quit.
 
 Place notes under:
 
-> The repository ships with **6 sample translation-error entries** under `data/raw/translation/` so the demo runs out of the box. Replace them with your own notes for real use. If your notes contain private information, add `data/raw/` to `.gitignore` before committing.
+> The repository ships with a small CET-6 demo corpus: **6 translation-error entries**, **46 past translation prompts**, **69 translation phrases**, **50 high-frequency words** and **15 long-sentence analyses**. Replace them with your own notes for real use. If your notes contain private information, add `data/raw/` to `.gitignore` before committing.
 >
-> 仓库自带 **6 条翻译错题示例**，保证 clone 后可以立即跑通。正式使用时请替换为自己的笔记；如果笔记包含隐私，提交前把 `data/raw/` 加入 `.gitignore`。
+> 仓库自带一套六级示例资料：**6 条翻译错题、46 篇历年翻译真题、69 条翻译高频短语、50 个高频词、15 个长难句分析**，保证 clone 后可以立即跑通。正式使用时请替换为自己的笔记；如果笔记包含隐私，提交前把 `data/raw/` 加入 `.gitignore`。
 
 ```text
 data/raw/
@@ -541,12 +541,12 @@ cet6-rag-atlas/
 
 ## ⚠️ Limitations | 当前限制
 
-- The bundled demo index contains **6 translation-error chunks** only. Questions about long sentences will correctly return “insufficient context” until that corpus is added.
+- The bundled demo index is intentionally small: 6 translation-error entries, 46 past translation prompts, 69 translation phrases, 50 words and 15 long-sentence analyses. It is not a substitute for a complete CET-6 corpus.
 - Retrieval is dense-only; no BM25 or reranker yet.
 - Designed for single-user local use; no authentication or multi-tenant isolation.
 - Generation quality depends on the coverage and structure of the personal notes.
 
-**中文：** 当前示例库只有 6 条翻译错题；长难句问题会提示资料不足。项目定位是个人本地学习工具，不是多用户生产系统。
+**中文：** 当前示例库包含 6 条翻译错题、46 篇历年翻译真题、69 条翻译短语、50 个高频词和 15 个长难句，规模仍然有限；项目定位是个人本地学习工具，不是多用户生产系统。
 
 ---
 
