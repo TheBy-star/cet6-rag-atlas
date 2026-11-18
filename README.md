@@ -12,6 +12,7 @@
 [![ChromaDB](https://img.shields.io/badge/ChromaDB-1.5-FF6B35?style=flat-square)](https://www.trychroma.com/)
 [![BGE](https://img.shields.io/badge/BGE-small--zh--v1.5-512d-5B21B6?style=flat-square)](https://huggingface.co/BAAI/bge-small-zh-v1.5)
 [![DeepSeek](https://img.shields.io/badge/DeepSeek-deepseek--chat-0EA5E9?style=flat-square)](https://www.deepseek.com/)
+[![tests](https://github.com/TheBy-star/cet6-rag-atlas/actions/workflows/tests.yml/badge.svg)](https://github.com/TheBy-star/cet6-rag-atlas/actions/workflows/tests.yml)
 [![License](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](LICENSE)
 
 **English** · [概述](#overview) · [架构](#architecture) · [快速开始](#quick-start) · [踩坑记录](#pitfalls)
@@ -77,6 +78,7 @@ This makes the output predictable for learners and easier to evaluate than a fre
 ### 3. Local-First, Lightweight Deployment | 本地化轻量级部署
 
 - **Local knowledge:** notes, chunks, and ChromaDB vectors stay on disk.
+- **Hybrid retrieval:** dense BGE similarity + BM25 lexical matching fused with Reciprocal Rank Fusion (RRF).
 - **Retrieval fallback:** if the ChromaDB file is unavailable or corrupted, the app automatically switches to a NumPy-based local index (`data/local_index`), so the UI remains usable.
 - **Lightweight embedding:** `BAAI/bge-small-zh-v1.5` runs through **FastEmbed + ONNX Runtime**, so there is **no PyTorch dependency and no GPU requirement**.
 - **Minimal network surface:** only the retrieved context and question are sent to the DeepSeek API at generation time.
@@ -495,6 +497,34 @@ The project includes `.streamlit/config.toml` with `headless = true` to avoid th
 
 ---
 
+## ✅ Evaluation & Tests | 评测与测试
+
+A 30-question gold set covers translation phrases, vocabulary, long sentences and translation-error entries. Retrieval is evaluated with **Recall@K** and **MRR**:
+
+| Mode | Recall@1 | Recall@3 | MRR |
+|---|---:|---:|---:|
+| Dense only | 93.33% | 100.00% | 0.967 |
+| **Hybrid (dense + BM25 + RRF)** | **96.67%** | **100.00%** | **0.983** |
+
+Run the evaluation:
+
+```powershell
+.\.venv\Scripts\python.exe eval_retrieval.py --mode dense
+.\.venv\Scripts\python.exe eval_retrieval.py --mode hybrid
+```
+
+Results are written to `eval/results/`. The hybrid retriever improves Top-1 accuracy without lowering Recall@3.
+
+Unit tests cover tokenization, BM25 scoring, RRF fusion, citation validation and chunk cleaning:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+```
+
+GitHub Actions runs the same test suite on every push and pull request.
+
+---
+
 ## 📁 Project Structure | 目录结构
 
 ```text
@@ -503,9 +533,13 @@ cet6-rag-atlas/
 ├─ step1_chunk.py             # TXT → chunks.jsonl
 ├─ step2_build_index.py       # BGE → ChromaDB
 ├─ step3_ask.py               # CLI RAG pipeline
-├─ local_index.py             # NumPy fallback index
+├─ local_index.py             # NumPy + BM25 hybrid index
+├─ retrieval_utils.py         # BM25 / RRF / citation validation
+├─ eval_retrieval.py          # Recall@K and MRR evaluation
 ├─ requirements.txt
+├─ requirements-test.txt
 ├─ .env.example
+├─ .github/workflows/tests.yml
 ├─ .streamlit/
 │  └─ config.toml
 ├─ data/
@@ -513,6 +547,10 @@ cet6-rag-atlas/
 │  ├─ chunks/chunks.jsonl     # generated
 │  ├─ chroma_db/              # generated vector store
 │  └─ local_index/            # generated fallback index
+├─ eval/
+│  ├─ questions.jsonl         # 30-question gold set
+│  └─ results/                # generated metrics
+├─ tests/                     # unit tests
 ├─ models/                    # BGE cache (generated)
 ├─ docs/
 │  ├─ architecture.svg
@@ -530,9 +568,11 @@ cet6-rag-atlas/
 - [x] BGE + ChromaDB local vector store
 - [x] DeepSeek grounded generation with citations
 - [x] Streamlit chat UI with expandable sources
-- [ ] Hybrid retrieval (BM25 + dense vectors)
+- [x] Hybrid retrieval (BM25 + dense vectors + RRF)
+- [x] Citation validation against retrieved sources
+- [x] Retrieval evaluation set (Recall@K, MRR)
 - [ ] Cross-encoder reranking (`bge-reranker`)
-- [ ] Retrieval evaluation set (Recall@K, citation hit rate)
+- [ ] Citation hit-rate evaluation
 - [ ] Incremental indexing for edited notes
 - [ ] Conversation memory with context compression
 - [ ] Dockerized deployment
@@ -542,7 +582,7 @@ cet6-rag-atlas/
 ## ⚠️ Limitations | 当前限制
 
 - The bundled demo index is intentionally small: 6 translation-error entries, 46 past translation prompts, 69 translation phrases, 50 words and 15 long-sentence analyses. It is not a substitute for a complete CET-6 corpus.
-- Retrieval is dense-only; no BM25 or reranker yet.
+- Retrieval uses hybrid dense + BM25 retrieval, but there is no cross-encoder reranker yet.
 - Designed for single-user local use; no authentication or multi-tenant isolation.
 - Generation quality depends on the coverage and structure of the personal notes.
 

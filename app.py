@@ -8,6 +8,7 @@ from __future__ import annotations
 import streamlit as st
 
 from step3_ask import ask_deepseek, get_api_key, load_resources, retrieve
+from retrieval_utils import validate_citations
 
 st.set_page_config(
     page_title="六级备考 RAG 助手",
@@ -126,6 +127,25 @@ if question:
                     ]
 
                     st.markdown(answer)
+
+                    citation = validate_citations(answer, len(hits))
+                    if citation["invalid"]:
+                        st.warning(
+                            "引用校验：回答引用了不存在的资料编号 "
+                            + ", ".join(
+                                f"[{n}]" for n in citation["invalid"]
+                            )
+                        )
+                    elif citation["has_citation"]:
+                        st.caption(
+                            "引用校验通过："
+                            + ", ".join(
+                                f"[{n}]" for n in citation["cited"]
+                            )
+                        )
+                    else:
+                        st.info("引用校验：回答没有标注来源，请核对原文。")
+
                     render_sources(sources)
                     st.caption(
                         "以上回答只依据你的个人笔记；资料不足时请补充对应内容。"

@@ -1,0 +1,1030 @@
+{
+  "mode": "hybrid",
+  "total": 30,
+  "recall_at_1": 0.9666666666666667,
+  "recall_at_3": 1.0,
+  "recall_at_5": 1.0,
+  "mrr": 0.9833333333333333,
+  "details": [
+    {
+      "id": "q01",
+      "question": "碳中和用英语怎么表达？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "碳中和 / carbon neutrality",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "碳中和 / carbon neutrality",
+          "distance": 0.27613407373428345
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "简约低碳的生活方式 / simple and low-carbon lifestyle",
+          "distance": 0.44401663541793823
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "在……中发挥重要作用 / play a significant role in",
+          "distance": 0.5459591150283813
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "生活水平（固定表达）",
+          "distance": 0.55437171459198
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "和谐共生 / harmonious coexistence",
+          "distance": 0.5533226728439331
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "一带一路倡议的英文怎么说？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "一带一路倡议 / Belt and Road Initiative",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "一带一路倡议 / Belt and Road Initiative",
+          "distance": 0.22356343269348145
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年3月第1套",
+          "distance": 0.5221065282821655
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2021年12月第1套",
+          "distance": 0.5592262148857117
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "controversial",
+          "distance": 0.5698723793029785
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "advocate",
+          "distance": 0.5360956192016602
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "乡村振兴战略怎么翻译？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "乡村振兴战略 / rural revitalization strategy",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "乡村振兴战略 / rural revitalization strategy",
+          "distance": 0.20459532737731934
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "乡村振兴 / rural revitalization",
+          "distance": 0.2899296283721924
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "人才强国战略 / talent development strategy",
+          "distance": 0.4260838031768799
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "可持续发展战略 / sustainable development strategy",
+          "distance": 0.46780747175216675
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2021年12月第3套",
+          "distance": 0.46292436122894287
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "数字经济用英语怎么说？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "数字经济 / digital economy",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "数字经济 / digital economy",
+          "distance": 0.2906532287597656
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "数字技术 / digital technology",
+          "distance": 0.44440793991088867
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "促进经济（高频搭配）",
+          "distance": 0.444185733795166
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "地摊经济 / street-stall economy",
+          "distance": 0.4626385569572449
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "数字化转型 / digital transformation",
+          "distance": 0.49870383739471436
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "非物质文化遗产的英文表达是什么？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "非物质文化遗产 / intangible cultural heritage",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "非物质文化遗产 / intangible cultural heritage",
+          "distance": 0.34134119749069214
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "生活水平（固定表达）",
+          "distance": 0.49394166469573975
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化传承 / cultural inheritance",
+          "distance": 0.46154797077178955
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "传承文化（动词辨析）",
+          "distance": 0.46704423427581787
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化底蕴 / cultural deposits",
+          "distance": 0.43879491090774536
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "社会保障怎么翻译？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "社会保障 / social security",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "社会保障 / social security",
+          "distance": 0.2514457106590271
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第二套",
+          "distance": 0.41210949420928955
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第三套",
+          "distance": 0.48444920778274536
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "环境保护（冠词与并列）",
+          "distance": 0.487720787525177
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第一套",
+          "distance": 0.5159345865249634
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "改革开放的英文说法是什么？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "改革开放 / Reform and Opening-up",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "改革开放 / Reform and Opening-up",
+          "distance": 0.28063464164733887
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "促进经济（高频搭配）",
+          "distance": 0.47164231538772583
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2021年12月第3套",
+          "distance": 0.5315430760383606
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "promote",
+          "distance": 0.4995386600494385
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 07｜强调句型 + not...but...",
+          "distance": 0.5100243091583252
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "人工智能用英语怎么说？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "人工智能 / artificial intelligence (AI)",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "人工智能 / artificial intelligence (AI)",
+          "distance": 0.34605371952056885
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 03｜介词 + which 定语从句",
+          "distance": 0.5355667471885681
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "利用；使用 / utilize",
+          "distance": 0.5488680601119995
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "人才强国战略 / talent development strategy",
+          "distance": 0.5053223371505737
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "illustrate",
+          "distance": 0.5419610142707825
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "可持续发展战略怎么翻？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "可持续发展战略 / sustainable development strategy",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "可持续发展战略 / sustainable development strategy",
+          "distance": 0.2645438313484192
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "持续发展 / sustainable development",
+          "distance": 0.38756030797958374
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "乡村振兴战略 / rural revitalization strategy",
+          "distance": 0.4822297692298889
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "人才强国战略 / talent development strategy",
+          "distance": 0.5008281469345093
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "全面发展 / comprehensive development",
+          "distance": 0.4610583782196045
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "文化传承用英语怎么说？",
+      "expected_source": "translation/翻译高频短语.txt",
+      "expected_section": "文化传承 / cultural inheritance",
+      "rank": 2,
+      "top_sources": [
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "传承文化（动词辨析）",
+          "distance": 0.26355427503585815
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化传承 / cultural inheritance",
+          "distance": 0.32746368646621704
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "传承；传下去 / pass down",
+          "distance": 0.37653690576553345
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化底蕴 / cultural deposits",
+          "distance": 0.4337204694747925
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "preserve",
+          "distance": 0.49780869483947754
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "facilitate 有哪些高频搭配？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "facilitate",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "facilitate",
+          "distance": 0.383696973323822
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "cultivate",
+          "distance": 0.4510384202003479
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "diverse",
+          "distance": 0.450032114982605
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "reinforce",
+          "distance": 0.4616592526435852
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "controversial",
+          "distance": 0.4784337878227234
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "alleviate 通常和哪些词搭配？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "alleviate",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "alleviate",
+          "distance": 0.30668890476226807
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "cultivate",
+          "distance": 0.4014016389846802
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "diverse",
+          "distance": 0.3992716073989868
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "generate",
+          "distance": 0.4168356657028198
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "mitigate",
+          "distance": 0.43338221311569214
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "question": "boost economic growth 是什么意思？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "boost",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "boost",
+          "distance": 0.22550612688064575
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "促进经济（高频搭配）",
+          "distance": 0.3139209747314453
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "promote",
+          "distance": 0.3389272093772888
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "sustain",
+          "distance": 0.39587265253067017
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "科技创新（词性与搭配）",
+          "distance": 0.4099293351173401
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "question": "incentive 的常见用法是什么？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "incentive",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "incentive",
+          "distance": 0.41241806745529175
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "utilize",
+          "distance": 0.4839983582496643
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "impose",
+          "distance": 0.47695279121398926
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "promote",
+          "distance": 0.5343443155288696
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "integrate",
+          "distance": 0.5009488463401794
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "question": "mitigate 和 reduce 有什么区别？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "mitigate",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "mitigate",
+          "distance": 0.4934402108192444
+        },
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "减少污染（冠词）",
+          "distance": 0.5671072602272034
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "alleviate",
+          "distance": 0.5525819063186646
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "curb",
+          "distance": 0.5726301670074463
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "对……有害 / be detrimental to",
+          "distance": 0.5430852174758911
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "question": "sustain 的形容词形式是什么？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "sustain",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "sustain",
+          "distance": 0.374011754989624
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2019年6月第1套",
+          "distance": 0.4986291527748108
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 14｜so...that... 结果状语从句",
+          "distance": 0.5232127904891968
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 13｜Rather than + 并列结构",
+          "distance": 0.5356642007827759
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "thrive",
+          "distance": 0.5547468662261963
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "question": "undermine 一般搭配什么名词？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "undermine",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "undermine",
+          "distance": 0.40290987491607666
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "assess",
+          "distance": 0.5001077651977539
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "hinder",
+          "distance": 0.49791085720062256
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "anticipate",
+          "distance": 0.5077992677688599
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "diverse",
+          "distance": 0.5072906017303467
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "question": "vulnerable 后面接什么介词？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "vulnerable",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "vulnerable",
+          "distance": 0.38311004638671875
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 09｜Despite 介词短语 + who 定语从句",
+          "distance": 0.5188207626342773
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "hinder",
+          "distance": 0.4997907280921936
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "attribute",
+          "distance": 0.5139471888542175
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "demonstrate",
+          "distance": 0.4632640480995178
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "question": "advocate 后面接 doing 还是 to do？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "advocate",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "advocate",
+          "distance": 0.4478647708892822
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "attribute",
+          "distance": 0.4928385019302368
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "hinder",
+          "distance": 0.5249349474906921
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 13｜Rather than + 并列结构",
+          "distance": 0.5396569967269897
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "eliminate",
+          "distance": 0.5363932847976685
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "question": "comprehensive 常修饰哪些名词？",
+      "expected_source": "vocabulary/六级高频词汇.txt",
+      "expected_section": "comprehensive",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "comprehensive",
+          "distance": 0.398895800113678
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "widespread",
+          "distance": 0.4374848008155823
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "illustrate",
+          "distance": 0.43212026357650757
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第一套",
+          "distance": 0.47892940044403076
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第二套",
+          "distance": 0.4798223376274109
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "question": "分析 while 引导让步状语从句的长难句",
+      "expected_source": "long_sentences/阅读长难句.txt",
+      "expected_section": "长难句 01｜让步状语从句 + 定语从句",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 01｜让步状语从句 + 定语从句",
+          "distance": 0.2069370150566101
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 01｜让步状语从句 + 定语从句",
+          "distance": 0.21778959035873413
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 14｜so...that... 结果状语从句",
+          "distance": 0.3149604797363281
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 03｜介词 + which 定语从句",
+          "distance": 0.3095405101776123
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 09｜Despite 介词短语 + who 定语从句",
+          "distance": 0.3478245139122009
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "question": "Not until 位于句首怎么倒装？",
+      "expected_source": "long_sentences/阅读长难句.txt",
+      "expected_section": "长难句 02｜Not until 部分倒装",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 02｜Not until 部分倒装",
+          "distance": 0.30799293518066406
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 06｜虚拟条件句的倒装",
+          "distance": 0.39888906478881836
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 04｜主语从句 + not...but...",
+          "distance": 0.5107649564743042
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 07｜强调句型 + not...but...",
+          "distance": 0.5751602649688721
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 14｜so...that... 结果状语从句",
+          "distance": 0.5325384736061096
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "question": "介词 + which 定语从句怎么分析？",
+      "expected_source": "long_sentences/阅读长难句.txt",
+      "expected_section": "长难句 03｜介词 + which 定语从句",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 03｜介词 + which 定语从句",
+          "distance": 0.2351992130279541
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 09｜Despite 介词短语 + who 定语从句",
+          "distance": 0.34724730253219604
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 04｜主语从句 + not...but...",
+          "distance": 0.4156080484390259
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 01｜让步状语从句 + 定语从句",
+          "distance": 0.42588621377944946
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 01｜让步状语从句 + 定语从句",
+          "distance": 0.43002188205718994
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "question": "should 省略 if 的虚拟条件句怎么倒装？",
+      "expected_source": "long_sentences/阅读长难句.txt",
+      "expected_section": "长难句 06｜虚拟条件句的倒装",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 06｜虚拟条件句的倒装",
+          "distance": 0.27910351753234863
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 02｜Not until 部分倒装",
+          "distance": 0.4006514549255371
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 15｜were to 虚拟条件句",
+          "distance": 0.406194806098938
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 07｜强调句型 + not...but...",
+          "distance": 0.48461031913757324
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 13｜Rather than + 并列结构",
+          "distance": 0.4653558135032654
+        }
+      ]
+    },
+    {
+      "id": "q25",
+      "question": "the more...the more... 怎么翻译？",
+      "expected_source": "long_sentences/阅读长难句.txt",
+      "expected_section": "长难句 08｜the more...the more...",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 08｜the more...the more...",
+          "distance": 0.36627256870269775
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第二套",
+          "distance": 0.4799577593803406
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第一套",
+          "distance": 0.48364728689193726
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2023年12月第一套",
+          "distance": 0.48171234130859375
+        },
+        {
+          "source": "long_sentences/阅读长难句.txt",
+          "section": "长难句 12｜By the time + 完成时",
+          "distance": 0.45121610164642334
+        }
+      ]
+    },
+    {
+      "id": "q26",
+      "question": "促进经济怎么翻最地道？",
+      "expected_source": "translation/翻译错题本.txt",
+      "expected_section": "促进经济（高频搭配）",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "促进经济（高频搭配）",
+          "distance": 0.35250675678253174
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "boost",
+          "distance": 0.48120802640914917
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "地摊经济 / street-stall economy",
+          "distance": 0.45555204153060913
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "promote",
+          "distance": 0.49541282653808594
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "数字经济 / digital economy",
+          "distance": 0.4993109703063965
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "question": "减少污染用英语怎么说？",
+      "expected_source": "translation/翻译错题本.txt",
+      "expected_section": "减少污染（冠词）",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "减少污染（冠词）",
+          "distance": 0.2604881525039673
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "环境污染防治 / environmental pollution prevention",
+          "distance": 0.37671327590942383
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "节能减排 / energy conservation and emission reduction",
+          "distance": 0.4220377802848816
+        },
+        {
+          "source": "vocabulary/六级高频词汇.txt",
+          "section": "mitigate",
+          "distance": 0.45838314294815063
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "利用；使用 / utilize",
+          "distance": 0.4979555606842041
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "question": "科技创新怎么表达？",
+      "expected_source": "translation/翻译错题本.txt",
+      "expected_section": "科技创新（词性与搭配）",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "科技创新（词性与搭配）",
+          "distance": 0.3435118794441223
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "技术创新 / technological innovation",
+          "distance": 0.41128599643707275
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "重大科技成就 / significant scientific and technological achievemen",
+          "distance": 0.48360949754714966
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "自主创新 / independent innovation",
+          "distance": 0.5029302835464478
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "创新驱动发展 / innovation-driven development",
+          "distance": 0.4877150058746338
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "question": "传承文化用英语怎么说？",
+      "expected_source": "translation/翻译错题本.txt",
+      "expected_section": "传承文化（动词辨析）",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "传承文化（动词辨析）",
+          "distance": 0.26175957918167114
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化传承 / cultural inheritance",
+          "distance": 0.3473159074783325
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "传承；传下去 / pass down",
+          "distance": 0.3598264455795288
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化底蕴 / cultural deposits",
+          "distance": 0.4661368131637573
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "文化交流 / cultural exchange",
+          "distance": 0.4842514991760254
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "question": "生活水平显著提高怎么翻译？",
+      "expected_source": "translation/翻译错题本.txt",
+      "expected_section": "生活水平（固定表达）",
+      "rank": 1,
+      "top_sources": [
+        {
+          "source": "translation/翻译错题本.txt",
+          "section": "生活水平（固定表达）",
+          "distance": 0.2573869824409485
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "生活水平的提高 / the improvement of living standards",
+          "distance": 0.24219685792922974
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "取得显著进步 / make remarkable progress",
+          "distance": 0.3552968502044678
+        },
+        {
+          "source": "translation/历年翻译真题.txt",
+          "section": "2016年12月第2套",
+          "distance": 0.42340874671936035
+        },
+        {
+          "source": "translation/翻译高频短语.txt",
+          "section": "不断改善；持续提升 / continuously improve",
+          "distance": 0.3554682731628418
+        }
+      ]
+    }
+  ]
+}

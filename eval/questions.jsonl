@@ -1,0 +1,30 @@
+{"id":"q01","question":"碳中和用英语怎么表达？","expected_source":"translation/翻译高频短语.txt","expected_section":"碳中和 / carbon neutrality","type":"translation_phrase"}
+{"id":"q02","question":"一带一路倡议的英文怎么说？","expected_source":"translation/翻译高频短语.txt","expected_section":"一带一路倡议 / Belt and Road Initiative","type":"translation_phrase"}
+{"id":"q03","question":"乡村振兴战略怎么翻译？","expected_source":"translation/翻译高频短语.txt","expected_section":"乡村振兴战略 / rural revitalization strategy","type":"translation_phrase"}
+{"id":"q04","question":"数字经济用英语怎么说？","expected_source":"translation/翻译高频短语.txt","expected_section":"数字经济 / digital economy","type":"translation_phrase"}
+{"id":"q05","question":"非物质文化遗产的英文表达是什么？","expected_source":"translation/翻译高频短语.txt","expected_section":"非物质文化遗产 / intangible cultural heritage","type":"translation_phrase"}
+{"id":"q06","question":"社会保障怎么翻译？","expected_source":"translation/翻译高频短语.txt","expected_section":"社会保障 / social security","type":"translation_phrase"}
+{"id":"q07","question":"改革开放的英文说法是什么？","expected_source":"translation/翻译高频短语.txt","expected_section":"改革开放 / Reform and Opening-up","type":"translation_phrase"}
+{"id":"q08","question":"人工智能用英语怎么说？","expected_source":"translation/翻译高频短语.txt","expected_section":"人工智能 / artificial intelligence (AI)","type":"translation_phrase"}
+{"id":"q09","question":"可持续发展战略怎么翻？","expected_source":"translation/翻译高频短语.txt","expected_section":"可持续发展战略 / sustainable development strategy","type":"translation_phrase"}
+{"id":"q10","question":"文化传承用英语怎么说？","expected_source":"translation/翻译高频短语.txt","expected_section":"文化传承 / cultural inheritance","type":"translation_phrase"}
+{"id":"q11","question":"facilitate 有哪些高频搭配？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"facilitate","type":"vocabulary"}
+{"id":"q12","question":"alleviate 通常和哪些词搭配？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"alleviate","type":"vocabulary"}
+{"id":"q13","question":"boost economic growth 是什么意思？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"boost","type":"vocabulary"}
+{"id":"q14","question":"incentive 的常见用法是什么？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"incentive","type":"vocabulary"}
+{"id":"q15","question":"mitigate 和 reduce 有什么区别？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"mitigate","type":"vocabulary"}
+{"id":"q16","question":"sustain 的形容词形式是什么？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"sustain","type":"vocabulary"}
+{"id":"q17","question":"undermine 一般搭配什么名词？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"undermine","type":"vocabulary"}
+{"id":"q18","question":"vulnerable 后面接什么介词？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"vulnerable","type":"vocabulary"}
+{"id":"q19","question":"advocate 后面接 doing 还是 to do？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"advocate","type":"vocabulary"}
+{"id":"q20","question":"comprehensive 常修饰哪些名词？","expected_source":"vocabulary/六级高频词汇.txt","expected_section":"comprehensive","type":"vocabulary"}
+{"id":"q21","question":"分析 while 引导让步状语从句的长难句","expected_source":"long_sentences/阅读长难句.txt","expected_section":"长难句 01｜让步状语从句 + 定语从句","type":"long_sentence"}
+{"id":"q22","question":"Not until 位于句首怎么倒装？","expected_source":"long_sentences/阅读长难句.txt","expected_section":"长难句 02｜Not until 部分倒装","type":"long_sentence"}
+{"id":"q23","question":"介词 + which 定语从句怎么分析？","expected_source":"long_sentences/阅读长难句.txt","expected_section":"长难句 03｜介词 + which 定语从句","type":"long_sentence"}
+{"id":"q24","question":"should 省略 if 的虚拟条件句怎么倒装？","expected_source":"long_sentences/阅读长难句.txt","expected_section":"长难句 06｜虚拟条件句的倒装","type":"long_sentence"}
+{"id":"q25","question":"the more...the more... 怎么翻译？","expected_source":"long_sentences/阅读长难句.txt","expected_section":"长难句 08｜the more...the more...","type":"long_sentence"}
+{"id":"q26","question":"促进经济怎么翻最地道？","expected_source":"translation/翻译错题本.txt","expected_section":"促进经济（高频搭配）","type":"translation_error"}
+{"id":"q27","question":"减少污染用英语怎么说？","expected_source":"translation/翻译错题本.txt","expected_section":"减少污染（冠词）","type":"translation_error"}
+{"id":"q28","question":"科技创新怎么表达？","expected_source":"translation/翻译错题本.txt","expected_section":"科技创新（词性与搭配）","type":"translation_error"}
+{"id":"q29","question":"传承文化用英语怎么说？","expected_source":"translation/翻译错题本.txt","expected_section":"传承文化（动词辨析）","type":"translation_error"}
+{"id":"q30","question":"生活水平显著提高怎么翻译？","expected_source":"translation/翻译错题本.txt","expected_section":"生活水平（固定表达）","type":"translation_error"}

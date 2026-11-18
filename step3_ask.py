@@ -12,6 +12,8 @@ import chromadb
 import requests
 from fastembed import TextEmbedding
 
+from retrieval_utils import validate_citations
+
 BASE_DIR = Path(__file__).resolve().parent
 ENV_FILE = BASE_DIR / ".env"
 CHROMA_DIR = BASE_DIR / "data" / "chroma_db"
@@ -88,11 +90,20 @@ def load_resources():
 
 def retrieve(model, collection, question: str):
     query_vector = list(model.query_embed([question]))[0].tolist()
-    results = collection.query(
-        query_embeddings=[query_vector],
-        n_results=min(TOP_K, collection.count()),
-        include=["documents", "metadatas", "distances"],
-    )
+    top_k = min(TOP_K, collection.count())
+
+    if hasattr(collection, "search"):
+        results = collection.search(
+            question,
+            [query_vector],
+            n_results=top_k,
+        )
+    else:
+        results = collection.query(
+            query_embeddings=[query_vector],
+            n_results=top_k,
+            include=["documents", "metadatas", "distances"],
+        )
 
     hits = []
     for document, metadata, distance in zip(
@@ -180,6 +191,21 @@ def ask_once(api_key: str, model, collection, question: str) -> None:
     print("\nDeepSeek 回答：\n")
     answer = ask_deepseek(api_key, question, hits)
     print(answer)
+
+    citation = validate_citations(answer, len(hits))
+    if citation["invalid"]:
+        print(
+            "\n[引用校验] 发现无效引用："
+            + ", ".join(f"[{n}]" for n in citation["invalid"])
+        )
+    elif citation["has_citation"]:
+        print(
+            "\n[引用校验] 通过："
+            + ", ".join(f"[{n}]" for n in citation["cited"])
+        )
+    else:
+        print("\n[引用校验] 回答未标注来源")
+
     print("\n" + "=" * 60)
 
 

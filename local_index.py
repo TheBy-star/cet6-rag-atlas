@@ -11,6 +11,8 @@ from pathlib import Path
 import numpy as np
 from fastembed import TextEmbedding
 
+from retrieval_utils import BM25, reciprocal_rank_fusion
+
 BASE_DIR = Path(__file__).resolve().parent
 CHUNKS_FILE = BASE_DIR / "data" / "chunks" / "chunks.jsonl"
 INDEX_DIR = BASE_DIR / "data" / "local_index"
@@ -108,6 +110,7 @@ class LocalIndex:
             ITEMS_FILE.read_text(encoding="utf-8")
         )
         self.norms = np.linalg.norm(self.embeddings, axis=1)
+        self.bm25 = BM25([item["document"] for item in self.items])
 
     def count(self) -> int:
         return len(self.items)
@@ -138,6 +141,50 @@ class LocalIndex:
             documents.append(item["document"])
             metadatas.append(item["metadata"])
             distances.append(float(1.0 - similarities[int(index)]))
+
+        return {
+            "documents": [documents],
+            "metadatas": [metadatas],
+            "distances": [distances],
+        }
+
+    def search(
+        self,
+        question: str,
+        query_embeddings,
+        n_results: int = 3,
+    ) -> dict:
+        """Hybrid retrieval: dense cosine similarity + BM25 via RRF."""
+        query = np.asarray(query_embeddings[0], dtype=np.float32)
+        query_norm = np.linalg.norm(query)
+        if query_norm == 0:
+            raise ValueError("query embedding 不能是零向量")
+
+        dense_scores = (
+            self.embeddings @ query
+            / (self.norms * query_norm + 1e-12)
+        )
+        dense_ranking = list(
+            np.argsort(-dense_scores)[: min(50, len(self.items))]
+        )
+
+        bm25_scores = np.asarray(self.bm25.scores(question))
+        bm25_ranking = list(
+            np.argsort(-bm25_scores)[: min(50, len(self.items))]
+        )
+
+        fused = reciprocal_rank_fusion([dense_ranking, bm25_ranking])
+        top_indices = fused[:n_results]
+
+        documents = []
+        metadatas = []
+        distances = []
+
+        for index in top_indices:
+            item = self.items[int(index)]
+            documents.append(item["document"])
+            metadatas.append(item["metadata"])
+            distances.append(float(1.0 - dense_scores[int(index)]))
 
         return {
             "documents": [documents],
