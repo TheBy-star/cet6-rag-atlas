@@ -24,6 +24,7 @@ EMBEDDING_MODEL = "BAAI/bge-small-zh-v1.5"
 DEEPSEEK_MODEL = "deepseek-chat"
 API_URL = "https://api.deepseek.com/chat/completions"
 TOP_K = 3
+RERANK_CANDIDATES = 10
 
 SYSTEM_PROMPT = """你是专攻大学英语六级备考的助教。
 你只能依据【检索资料】回答，不要使用资料之外的知识编造答案。
@@ -90,18 +91,22 @@ def load_resources():
 
 def retrieve(model, collection, question: str):
     query_vector = list(model.query_embed([question]))[0].tolist()
-    top_k = min(TOP_K, collection.count())
+    enable_reranker = os.getenv("ENABLE_RERANKER", "0") == "1"
+    candidate_k = (
+        RERANK_CANDIDATES if enable_reranker else TOP_K
+    )
+    candidate_k = min(candidate_k, collection.count())
 
     if hasattr(collection, "search"):
         results = collection.search(
             question,
             [query_vector],
-            n_results=top_k,
+            n_results=candidate_k,
         )
     else:
         results = collection.query(
             query_embeddings=[query_vector],
-            n_results=top_k,
+            n_results=candidate_k,
             include=["documents", "metadatas", "distances"],
         )
 
@@ -118,7 +123,17 @@ def retrieve(model, collection, question: str):
                 "distance": float(distance),
             }
         )
-    return hits
+
+    if enable_reranker:
+        try:
+            from reranker import rerank_hits
+
+            hits = rerank_hits(question, hits, top_k=TOP_K)
+        except Exception as exc:
+            print(f"Reranker 不可用，回退到混合检索：{exc}")
+            hits = hits[:TOP_K]
+
+    return hits[:TOP_K]
 
 
 def build_context(hits) -> str:

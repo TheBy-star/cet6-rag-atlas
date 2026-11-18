@@ -525,6 +525,45 @@ GitHub Actions runs the same test suite on every push and pull request.
 
 ---
 
+## 🎯 Optional: Cross-Encoder Reranker | 可选精排
+
+Hybrid retrieval first returns 10 candidates; an optional cross-encoder can rerank them to the final 3:
+
+```powershell
+$env:ENABLE_RERANKER = "1"
+.\.venv\Scripts\python.exe -m streamlit run app.py
+```
+
+The reranker uses `BAAI/bge-reranker-v2-m3-int8` via FastEmbed (about 0.57 GB, CPU-friendly). On the first run it downloads automatically; if loading fails, the app falls back to hybrid retrieval.
+
+中文：默认关闭 reranker，避免首次启动下载大模型；设置 `ENABLE_RERANKER=1` 后，先召回 10 条，再精排到 3 条。
+
+---
+
+## 🐳 Docker Deployment | Docker 部署
+
+The repository includes a `Dockerfile` and `docker-compose.yml`.
+
+```powershell
+# Build the image
+docker compose build
+
+# Build chunks and the local index inside the container
+docker compose run --rm app python step1_chunk.py
+docker compose run --rm app python local_index.py
+
+# Start the app
+docker compose up
+```
+
+Open `http://localhost:8501`.
+
+- `.env` is passed at runtime via `env_file`, not baked into the image.
+- `data/` and `models/` are mounted as volumes, so indexes and model caches survive container rebuilds.
+- CPU-only; Docker Desktop with WSL2 is recommended on Windows.
+
+---
+
 ## 📁 Project Structure | 目录结构
 
 ```text
@@ -534,10 +573,14 @@ cet6-rag-atlas/
 ├─ step2_build_index.py       # BGE → ChromaDB
 ├─ step3_ask.py               # CLI RAG pipeline
 ├─ local_index.py             # NumPy + BM25 hybrid index
+├─ reranker.py                # optional cross-encoder reranker
 ├─ retrieval_utils.py         # BM25 / RRF / citation validation
 ├─ eval_retrieval.py          # Recall@K and MRR evaluation
 ├─ requirements.txt
 ├─ requirements-test.txt
+├─ Dockerfile
+├─ docker-compose.yml
+├─ .dockerignore
 ├─ .env.example
 ├─ .github/workflows/tests.yml
 ├─ .streamlit/
@@ -571,18 +614,19 @@ cet6-rag-atlas/
 - [x] Hybrid retrieval (BM25 + dense vectors + RRF)
 - [x] Citation validation against retrieved sources
 - [x] Retrieval evaluation set (Recall@K, MRR)
-- [ ] Cross-encoder reranking (`bge-reranker`)
+- [x] Optional cross-encoder reranking (`bge-reranker-v2-m3-int8`)
+- [x] Dockerized deployment
+- [ ] Learning loop: review queue + SM-2 spaced repetition
 - [ ] Citation hit-rate evaluation
 - [ ] Incremental indexing for edited notes
 - [ ] Conversation memory with context compression
-- [ ] Dockerized deployment
 
 ---
 
 ## ⚠️ Limitations | 当前限制
 
 - The bundled demo index is intentionally small: 6 translation-error entries, 46 past translation prompts, 69 translation phrases, 50 words and 15 long-sentence analyses. It is not a substitute for a complete CET-6 corpus.
-- Retrieval uses hybrid dense + BM25 retrieval, but there is no cross-encoder reranker yet.
+- Retrieval uses hybrid dense + BM25 retrieval, with an optional cross-encoder reranker disabled by default.
 - Designed for single-user local use; no authentication or multi-tenant isolation.
 - Generation quality depends on the coverage and structure of the personal notes.
 

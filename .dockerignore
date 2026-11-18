@@ -1,0 +1,14 @@
+.venv/
+.git/
+.github/
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+models/
+data/chunks/
+data/chroma_db/
+data/local_index/
+eval/results/
+tools/
+*.log

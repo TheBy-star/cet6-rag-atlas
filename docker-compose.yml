@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      HF_ENDPOINT: https://hf-mirror.com
+      ENABLE_RERANKER: "0"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped
