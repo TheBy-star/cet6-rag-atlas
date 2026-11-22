@@ -12,6 +12,7 @@ import chromadb
 import requests
 from fastembed import TextEmbedding
 
+from local_index import LocalIndex
 from retrieval_utils import validate_citations
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -97,7 +98,7 @@ def retrieve(model, collection, question: str):
     )
     candidate_k = min(candidate_k, collection.count())
 
-    if hasattr(collection, "search"):
+    if isinstance(collection, LocalIndex):
         results = collection.search(
             question,
             [query_vector],
