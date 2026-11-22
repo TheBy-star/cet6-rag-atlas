@@ -18,6 +18,7 @@ from retrieval_utils import validate_citations
 BASE_DIR = Path(__file__).resolve().parent
 ENV_FILE = BASE_DIR / ".env"
 CHROMA_DIR = BASE_DIR / "data" / "chroma_db"
+CHUNKS_FILE = BASE_DIR / "data" / "chunks" / "chunks.jsonl"
 MODEL_DIR = BASE_DIR / "models"
 
 COLLECTION_NAME = "cet6_notes"
@@ -75,8 +76,25 @@ def load_resources():
             path=str(CHROMA_DIR) + os.sep,
         )
         collection = client.get_collection(COLLECTION_NAME)
+
+        expected_count = 0
+        if CHUNKS_FILE.exists():
+            expected_count = sum(
+                1
+                for line in CHUNKS_FILE.read_text(
+                    encoding="utf-8"
+                ).splitlines()
+                if line.strip()
+            )
+
+        if collection.count() != expected_count:
+            raise RuntimeError(
+                "ChromaDB 数量与 chunks.jsonl 不一致："
+                f"{collection.count()} vs {expected_count}"
+            )
         if collection.count() == 0:
             raise RuntimeError("ChromaDB collection 为空")
+
         print(f"ChromaDB 已加载：{collection.count()} 条\n")
         return model, collection
     except Exception as exc:
